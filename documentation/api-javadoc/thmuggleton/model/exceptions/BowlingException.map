@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./BowlingException.html" title="thmuggleton.model.exceptions.BowlingException" alt="" coords="133,215,401,291"/>
+<area shape="rect" id="node1" href="./BowlingException.html" title="&lt;TABLE&gt;" alt="" coords="122,209,411,296"/>
+<area shape="rect" id="node2_1" href="./ScoreException.html" title="thmuggleton.model.exceptions.ScoreException" alt="" coords="139,349,395,425"/>
+<area shape="rect" id="node2" href="./ScoreException.html" title="&lt;TABLE&gt;" alt="" coords="128,344,405,431"/>
+<area shape="rect" id="node3_2" href="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/RuntimeException.html" title="java.lang.RuntimeException" alt="" coords="16,11,517,156"/>
+<area shape="rect" id="node3" href="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/RuntimeException.html" title="&lt;TABLE&gt;" alt="" coords="5,5,528,161"/>
+</map>

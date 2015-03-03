@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../Frame.html" title="thmuggleton.model.Frame" alt="" coords="91,11,387,208"/>
+<area shape="rect" id="node1" href="../Frame.html" title="&lt;TABLE&gt;" alt="" coords="81,5,398,213"/>
+<area shape="rect" id="node4_1" href="./AbstractFrame.html" title="thmuggleton.model.impl.AbstractFrame" alt="" coords="91,267,387,585"/>
+<area shape="rect" id="node4" href="./AbstractFrame.html" title="&lt;TABLE&gt;" alt="" coords="81,261,398,591"/>
+<area shape="rect" id="node2_2" href="./LastFrameImpl.html" title="thmuggleton.model.impl.LastFrameImpl" alt="" coords="16,644,217,789"/>
+<area shape="rect" id="node2" href="./LastFrameImpl.html" title="&lt;TABLE&gt;" alt="" coords="5,639,228,795"/>
+<area shape="rect" id="node3_3" href="./FrameImpl.html" title="thmuggleton.model.impl.FrameImpl" alt="" coords="263,644,464,789"/>
+<area shape="rect" id="node3" href="./FrameImpl.html" title="&lt;TABLE&gt;" alt="" coords="252,639,475,795"/>
+</map>

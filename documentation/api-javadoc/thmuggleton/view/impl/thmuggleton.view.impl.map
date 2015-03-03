@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./MenuBar.html" title="thmuggleton.view.impl.MenuBar" alt="" coords="16,89,256,165"/>
+<area shape="rect" id="node1" href="./MenuBar.html" title="&lt;TABLE&gt;" alt="" coords="5,83,267,170"/>
+<area shape="rect" id="node2_1" href="./PlayerScorePanel.html" title="thmuggleton.view.impl.PlayerScorePanel" alt="" coords="301,71,651,182"/>
+<area shape="rect" id="node2" href="./PlayerScorePanel.html" title="&lt;TABLE&gt;" alt="" coords="291,66,661,187"/>
+<area shape="rect" id="node3_2" href="./MainWindow.html" title="thmuggleton.view.impl.MainWindow" alt="" coords="697,11,1050,243"/>
+<area shape="rect" id="node3" href="./MainWindow.html" title="&lt;TABLE&gt;" alt="" coords="686,5,1061,248"/>
+<area shape="rect" id="node4_3" href="./AddScoresPanel.html" title="thmuggleton.view.impl.AddScoresPanel" alt="" coords="1095,71,1379,182"/>
+<area shape="rect" id="node4" href="./AddScoresPanel.html" title="&lt;TABLE&gt;" alt="" coords="1085,66,1390,187"/>
+<area shape="rect" id="node5_4" href="./Scoreboard.html" title="thmuggleton.view.impl.Scoreboard" alt="" coords="1425,54,1769,199"/>
+<area shape="rect" id="node5" href="./Scoreboard.html" title="&lt;TABLE&gt;" alt="" coords="1415,49,1780,205"/>
+<area shape="rect" id="node6_5" href="./AddPlayerPanel.html" title="thmuggleton.view.impl.AddPlayerPanel" alt="" coords="1815,71,2095,182"/>
+<area shape="rect" id="node6" href="./AddPlayerPanel.html" title="&lt;TABLE&gt;" alt="" coords="1804,66,2105,187"/>
+<area shape="rect" id="node7_6" href="./DisplayFramePanel.html" title="thmuggleton.view.impl.DisplayFramePanel" alt="" coords="2140,80,2468,173"/>
+<area shape="rect" id="node7" href="./DisplayFramePanel.html" title="&lt;TABLE&gt;" alt="" coords="2129,75,2479,179"/>
+</map>
