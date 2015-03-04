@@ -56,7 +56,7 @@ public class MatchImpl implements Match {
 	}
 	
 	/**
-	 * Creates a new Player object and returns it after adding it to the match.
+	 * Adds a new player to the match.
 	 * 
 	 * @param playerName
 	 * @return
@@ -81,13 +81,12 @@ public class MatchImpl implements Match {
 	}
 
 	/**
-	 * Adds the next score for the given player.
+	 * Adds the next score in the match.
 	 * 
-	 * @param playerName
 	 * @param score
 	 * 
-	 * @return boolean indicating whether the game is complete ({@code true})
-	 * or not ({@code false}).
+	 * @return boolean indicating whether the game for the current player is
+	 *         complete ({@code true}) or not ({@code false}).
 	 */
 	@Override
 	public boolean addScore(int score) {
@@ -103,11 +102,12 @@ public class MatchImpl implements Match {
 		GameImpl game = match.get(currentPlayer);
 		boolean frameComplete = game.addScore(score);
 		
-		// Increment player index if frame complete, or wrap to start
+		// Increment player index if frame complete, or wrap to first player
 		if (frameComplete) {
 			currentPlayerIndex++;
-			currentPlayerIndex = currentPlayerIndex < players.size() ? 
-					currentPlayerIndex : 0;
+			
+			if(currentPlayerIndex >= players.size())
+				currentPlayerIndex = 0;
 		}
 		
 		// Determine whether this score affects leaders

@@ -8,7 +8,7 @@ import thmuggleton.model.exceptions.BowlingException;
 
 
 /**
- * Defines an interface to interact with model objects representing a bowling
+ * Defines an interface to interact with a model object representing a bowling
  * match.
  * 
  * @author Thomas Muggleton
@@ -21,7 +21,7 @@ public interface Match {
 	public void clear();
 	
 	/**
-	 * Creates a new Player object and returns it after adding it to the match.
+	 * Adds a new player to the match.
 	 * 
 	 * @param playerName
 	 * @return
@@ -30,13 +30,12 @@ public interface Match {
 	public void addPlayer(String playerName) throws BowlingException;
 	
 	/**
-	 * Adds the next score for the given player.
+	 * Adds the next score in the match.
 	 * 
-	 * @param playerName
 	 * @param score
 	 * 
-	 * @return boolean indicating whether the game is complete ({@code true})
-	 * or not ({@code false}).
+	 * @return boolean indicating whether the game for the current player is
+	 *         complete ({@code true}) or not ({@code false}).
 	 */
 	public boolean addScore(int score);
 	

@@ -98,6 +98,7 @@ public class MatchController {
 		}
 		
 		view.clear();
-		model.clear();	
+		model.clear();
+		this.matchBegun = false;
 	}
 }
