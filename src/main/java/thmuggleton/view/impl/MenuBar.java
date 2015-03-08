@@ -1,6 +1,7 @@
 package thmuggleton.view.impl;
 
 import java.awt.event.ActionListener;
+import java.util.Map;
 
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -27,22 +28,22 @@ public class MenuBar extends JMenuBar {
 	/**
 	 * Constructor to create and add all menus.
 	 * 
-	 * @param controller
+	 * @param controllers Map between command Strings and their handlers.
 	 */
-	public MenuBar(ActionListener controller) {
+	public MenuBar(Map<String, ? extends ActionListener> controllers) {
 		
 		// Add all menus
-		this.add(createFileMenu(controller));
-		this.add(createHelpMenu(controller));
+		this.add(createFileMenu(controllers));
+		this.add(createHelpMenu(controllers));
 	}
 
 	/**
 	 * Creates and returns file menu.
 	 * 
-	 * @param controller
+	 * @param controllers Map between command Strings and their handlers.
 	 * @return
 	 */
-	private JMenu createFileMenu(ActionListener controller) {
+	private JMenu createFileMenu(Map<String, ? extends ActionListener> controllers) {
 		
 		// Instantiate file menu
 		fileMenu = new JMenu("File");
@@ -50,19 +51,19 @@ public class MenuBar extends JMenuBar {
 		// Create new menu item
 		newMatch = new JMenuItem(Command.NEW_MATCH);
 		newMatch.setActionCommand(Command.NEW_MATCH);
-		newMatch.addActionListener(controller);
+		newMatch.addActionListener(controllers.get(Command.NEW_MATCH));
 		fileMenu.add(newMatch);
 		
 		// Create export image menu item
 		exportImage = new JMenuItem(Command.EXPORT_IMAGE);
 		exportImage.setActionCommand(Command.EXPORT_IMAGE);
-		exportImage.addActionListener(controller);
+		exportImage.addActionListener(controllers.get(Command.EXPORT_IMAGE));
 		fileMenu.add(exportImage);
 		
 		// Create exit menu item
 		exit = new JMenuItem(Command.EXIT);
 		exit.setActionCommand(Command.EXIT);
-		exit.addActionListener(controller);
+		exit.addActionListener(controllers.get(Command.EXIT));
 		fileMenu.add(exit);
 		
 		return fileMenu;
@@ -71,10 +72,10 @@ public class MenuBar extends JMenuBar {
 	/**
 	 * Creates and returns help menu.
 	 * 
-	 * @param controller
+	 * @param controllers Map between command Strings and their handlers.
 	 * @return
 	 */
-	private JMenu createHelpMenu(ActionListener controller) {
+	private JMenu createHelpMenu(Map<String, ? extends ActionListener> controllers) {
 		
 		// Instantiate help menu
 		JMenu helpMenu = new JMenu("Help");
@@ -82,7 +83,7 @@ public class MenuBar extends JMenuBar {
 		// Create new menu item
 		JMenuItem about = new JMenuItem(Command.ABOUT);
 		about.setActionCommand(Command.ABOUT);
-		about.addActionListener(controller);
+		about.addActionListener(controllers.get(Command.ABOUT));
 		helpMenu.add(about);
 		
 		return helpMenu;

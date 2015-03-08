@@ -29,7 +29,7 @@ public class AddScoresPanel extends JPanel {
 	/**
 	 * Constructor; creates the panel used to add scores.
 	 * 
-	 * @param controller
+	 * @param controller handler for command to add a score to the match.
 	 * @return
 	 */
 	protected AddScoresPanel (ActionListener controller) {
@@ -55,10 +55,12 @@ public class AddScoresPanel extends JPanel {
 	}
 	
 	/**
-	 * Enables ({@code true}) or disables ({@code false}) the input
-	 * on this panel.
+	 * Enables ({@code true}) or disables ({@code false}) the input on this
+	 * panel.
 	 * 
 	 * @param enable
+	 *            boolean indicating whether input should be enabled
+	 *            ({@code true}) or disabled ({@code false}).
 	 */
 	protected void enableInput(boolean enable) {
 		inputScoresButton.setEnabled(enable);

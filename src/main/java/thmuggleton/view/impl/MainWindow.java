@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
+import java.util.Map;
 import java.util.Set;
 
 import javax.swing.JFrame;
@@ -44,14 +45,17 @@ public class MainWindow extends JFrame implements View {
 
 	/**
 	 * Constructor
+	 * 
+	 * @param controllers Map between command Strings and their handlers.
+	 * @param model object containing match data.
 	 */
-	public MainWindow(ActionListener controller, Match model) {
+	public MainWindow(Map<String, ? extends ActionListener> controllers, Match model) {
 		
 		// Set window size and positional parameters
-		this.setWindowParameters(controller);
+		this.setWindowParameters(controllers);
 
 		// Call helper method to layout GUI components
-		this.layoutComponents(controller, model);
+		this.layoutComponents(controllers, model);
 		
 		// Determine component sizes and display the window
 		this.pack();
@@ -72,7 +76,8 @@ public class MainWindow extends JFrame implements View {
 	/**
 	 * Adds a new player to this View.
 	 * 
-	 * @param playerName
+	 * @param playerName String containing the name
+	 * of the new player.
 	 */
 	@Override
 	public void addPlayer(String playerName) {
@@ -138,8 +143,6 @@ public class MainWindow extends JFrame implements View {
 	
 	/**
 	 * Disables the addition of further players.
-	 * 
-	 * @param playerName
 	 */
 	@Override
 	public void disableFurtherPlayers() {
@@ -155,9 +158,9 @@ public class MainWindow extends JFrame implements View {
 	}
 	
 	/**
-	 * Highlights the current leader.
+	 * Highlights the current leader(s).
 	 * 
-	 * @param leaders
+	 * @param leaders Set containing current leader(s).
 	 */
 	@Override
 	public void highlightLeaders(Set<String> leaders) {
@@ -180,14 +183,14 @@ public class MainWindow extends JFrame implements View {
 	 * 
 	 * @param controller to pass to custom window listener
 	 */
-	private void setWindowParameters(ActionListener controller) {
+	private void setWindowParameters(Map<String, ? extends ActionListener> controllers) {
 
 		// Set window title
 		this.setTitle(WINDOW_TITLE);
 
 		// Enable custom behaviour when user closes the window
 		this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
-		this.addWindowListener(new MainWindowListener(controller));
+		this.addWindowListener(new MainWindowListener(controllers.get(Command.EXIT)));
 
 		// Retrieve centre point of screen
 		Point screenCentre = GraphicsEnvironment.getLocalGraphicsEnvironment()
@@ -205,23 +208,23 @@ public class MainWindow extends JFrame implements View {
 	/**
 	 * Lays out all of the components for the GUI.
 	 * 
-	 * @param controller
-	 * @param scoreboard
+	 * @param controllers Map between command Strings and their handlers.
+	 * @param model object containing match data.
 	 */
-	private void layoutComponents(ActionListener controller, Match model) {
+	private void layoutComponents(Map<String, ? extends ActionListener> controllers, Match model) {
 		
 		// Create and add menu bar
-		menuBar = new MenuBar(controller);
+		menuBar = new MenuBar(controllers);
 		this.add(menuBar, BorderLayout.NORTH);
 		
 		// Create centre-panel for input and scoreboard
 		JPanel centrePanel = new JPanel(new BorderLayout());
 		
 		// Add panel for user input
-		centrePanel.add(createUserInputPanel(controller), BorderLayout.NORTH);
+		centrePanel.add(createUserInputPanel(controllers), BorderLayout.NORTH);
 		
 		// Add scoreboard
-		this.scoreboard = new Scoreboard(controller, model);
+		this.scoreboard = new Scoreboard(model);
 		centrePanel.add(scoreboard, BorderLayout.CENTER);
 		
 		// Add centre-panel to main window
@@ -231,17 +234,17 @@ public class MainWindow extends JFrame implements View {
 	/**
 	 * Lays out components for the top panel and adds these to the GUI.
 	 * 
-	 * @param controller
+	 * @param controllers Map between command Strings and their handlers.
 	 * @return
 	 */
-	private JPanel createUserInputPanel(ActionListener controller) {
+	private JPanel createUserInputPanel(Map<String, ? extends ActionListener> controllers) {
 		
 		// Create panel to return
 		JPanel result = new JPanel();
 		
 		// Create panel with textfield and button to add players
-		addPlayerPanel = new AddPlayerPanel(controller);
-		addScoresPanel = new AddScoresPanel(controller);
+		addPlayerPanel = new AddPlayerPanel(controllers.get(Command.ADD_PLAYER));
+		addScoresPanel = new AddScoresPanel(controllers.get(Command.ADD_SCORE));
 		
 		result.add(addPlayerPanel);
 		result.add(addScoresPanel);
@@ -262,7 +265,7 @@ public class MainWindow extends JFrame implements View {
 		/**
 		 * Constructor
 		 * 
-		 * @param controller
+		 * @param controller handler for window events.
 		 */
 		public MainWindowListener(ActionListener controller) {
 			super();

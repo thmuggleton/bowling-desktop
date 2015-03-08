@@ -1,5 +1,6 @@
 package thmuggleton.controller;
 
+import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -9,6 +10,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+import thmuggleton.Command;
 import thmuggleton.Constants;
 import thmuggleton.view.View;
 
@@ -17,23 +19,39 @@ import thmuggleton.view.View;
  * 
  * @author Thomas Muggleton
  */
-public class IOController {
+public class IOController implements Controller {
 	
 	// Fields
 	private View view;
-	
+
 	/**
-	 * Constructor
-	 * @param view
+	 * Sets the given view for this controller.
 	 */
-	public IOController(View view) {
+	@Override
+	public void setView(View view) {
 		this.view = view;
 	}
-
+	
+	/**
+	 * Handler method for action events.
+	 */
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		String command = e.getActionCommand();
+		
+		switch (command) {
+		
+		case (Command.EXPORT_IMAGE) :
+			this.exportScoreboardImage();
+			break;
+		}
+	}
+	
 	/**
 	 * Exports the currently displayed scoreboard as an image file.
 	 */
-	protected void exportScoreboardImage() {
+	private void exportScoreboardImage() {
 		
 		// Create file chooser dialog for image formats 
 		/// to initialise in working directory
@@ -72,9 +90,12 @@ public class IOController {
 	 * Returns a file having taken an absolute path and ensuring that
 	 * the desired file extension is appended.
 	 * 
-	 * @param absolutePath
-	 * @param desiredExtension
-	 * @return
+	 * @param absolutePath a String containing the absolute path for
+	 * the target file.
+	 * @param desiredExtension a String containing the intended extension
+	 * for the target file.
+	 * @return File object with the given absolute path and intended
+	 * extension.
 	 */
 	private File createFile(String absolutePath, String desiredExtension) {
 		

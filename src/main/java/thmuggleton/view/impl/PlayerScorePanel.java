@@ -37,8 +37,8 @@ public class PlayerScorePanel extends JPanel implements ChangeListener {
 	/**
 	 * Constructor
 	 * 
-	 * @param model
-	 * @param playerName
+	 * @param model object containing match data. 
+	 * @param playerName String containing the name of the player.
 	 */
 	protected PlayerScorePanel(Match model, String playerName) {
 		
@@ -52,7 +52,8 @@ public class PlayerScorePanel extends JPanel implements ChangeListener {
 	/**
 	 * Highlights the player name with the given colour.
 	 * 
-	 * @param colour
+	 * @param colour Color object containing the colour with which to
+	 * highlight the given player.
 	 */
 	protected void highlightPlayer(Color colour) {
 		playerNameField.setBackground(colour);		
@@ -68,7 +69,8 @@ public class PlayerScorePanel extends JPanel implements ChangeListener {
 	 * Creates and returns a panel on which to display a player name and their
 	 * scores.
 	 * 
-	 * @param playerName
+	 * @param model object containing match data. 
+	 * @param playerName String containing the name of the player.
 	 */
 	private void layoutComponents(Match model, String playerName) {
 	
@@ -94,8 +96,8 @@ public class PlayerScorePanel extends JPanel implements ChangeListener {
 	 * Creates and returns a panel on which to display scores
 	 * for the given player.
 	 * 
-	 * @param playerName
-	 * @return
+	 * @param model object containing match data. 
+	 * @param playerName String containing the name of the player.
 	 */
 	private JPanel createScoresPanel(Match model, String playerName) {
 		

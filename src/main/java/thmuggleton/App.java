@@ -2,7 +2,7 @@ package thmuggleton;
 
 import javax.swing.UIManager;
 
-import thmuggleton.controller.MainController;
+import thmuggleton.controller.InitialisationController;
 
 /**
  * Initialises the bowling application.
@@ -16,7 +16,7 @@ public class App {
 		setLookAndFeel();
 		
 		// Initialise application
-		new MainController();	
+		new InitialisationController();	
 	}
 
 	/**

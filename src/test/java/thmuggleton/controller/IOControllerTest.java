@@ -1,5 +1,6 @@
 package thmuggleton.controller;
 
+import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -17,6 +18,7 @@ import mockit.integration.junit4.JMockit;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import thmuggleton.Command;
 import thmuggleton.Constants;
 import thmuggleton.view.View;
 
@@ -49,12 +51,17 @@ public class IOControllerTest {
 	 */
 	@Test
 	public void shouldTakeNoFurtherActionIfUserPressesCancelWhenExportingAScoreboardImage(
+			@Mocked final ActionEvent mockEvent,
 			@Mocked final JFileChooser mockedFileChooser) {
 		
 		/* **************
 		 *  Record phase
 		 * **************/
 		new StrictExpectations() {{
+			
+			// Retrieve action command
+			mockEvent.getActionCommand();
+			result = Command.EXPORT_IMAGE;
 			
 			// Setup file chooser
 			new JFileChooser();
@@ -69,7 +76,7 @@ public class IOControllerTest {
 		/* **************
 		 *  Replay phase
 		 * **************/
-		controller.exportScoreboardImage();
+		controller.actionPerformed(mockEvent);
 	}
 	
 	/**
@@ -81,6 +88,7 @@ public class IOControllerTest {
 	 */
 	@Test
 	public void shouldCorrectlyExportScoreboardImageToPathWithNoExtensionSelectedByUser(
+			@Mocked final ActionEvent mockEvent,
 			@Mocked final JFileChooser mockedFileChooser,
 			@Mocked final BufferedImage mockedScoreboardImage,
 			@Mocked final File mockedSelectedFile,
@@ -95,6 +103,10 @@ public class IOControllerTest {
 		
 		new StrictExpectations() {{
 			
+			// Retrieve action command
+			mockEvent.getActionCommand();
+			result = Command.EXPORT_IMAGE;
+			
 			// Setup file chooser
 			new JFileChooser();
 			new File(anyString);
@@ -125,7 +137,7 @@ public class IOControllerTest {
 		/* **************
 		 *  Replay phase
 		 * **************/
-		controller.exportScoreboardImage();
+		controller.actionPerformed(mockEvent);
 	}
 	
 	/**
@@ -138,6 +150,7 @@ public class IOControllerTest {
 	 */
 	@Test
 	public void shouldCorrectlyExportScoreboardImageToPathWithInvalidExtension(
+			@Mocked final ActionEvent mockEvent,
 			@Mocked final JFileChooser mockedFileChooser,
 			@Mocked final BufferedImage mockedScoreboardImage,
 			@Mocked final File mockedSelectedFile,
@@ -152,6 +165,10 @@ public class IOControllerTest {
 		
 		new StrictExpectations() {{
 			
+			// Retrieve action command
+			mockEvent.getActionCommand();
+			result = Command.EXPORT_IMAGE;
+			
 			// Setup file chooser
 			new JFileChooser();
 			new File(anyString);
@@ -182,6 +199,6 @@ public class IOControllerTest {
 		/* **************
 		 *  Replay phase
 		 * **************/
-		controller.exportScoreboardImage();
+		controller.actionPerformed(mockEvent);
 	}
 }

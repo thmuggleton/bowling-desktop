@@ -29,7 +29,7 @@ public class AddPlayerPanel extends JPanel {
 	/**
 	 * Constructor; creates a panel to input new players for the bowling match.
 	 * 
-	 * @param controller
+	 * @param controller handler for the command to add a new player.
 	 * @return
 	 */
 	protected AddPlayerPanel(ActionListener controller) {
@@ -71,6 +71,8 @@ public class AddPlayerPanel extends JPanel {
 	 * on this panel.
 	 * 
 	 * @param enable
+	 *            boolean indicating whether input should be enabled
+	 *            ({@code true}) or disabled ({@code false}).
 	 */
 	protected void enableInput(boolean enable) {
 		addPlayerTextField.setEditable(enable);

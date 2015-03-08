@@ -2,7 +2,6 @@ package thmuggleton.view.impl;
 
 import java.awt.Color;
 import java.awt.GridLayout;
-import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,9 +30,9 @@ public class Scoreboard extends JPanel {
 	/**
 	 * Constructor.
 	 * 
-	 * @param model
+	 * @param model object containing match data.
 	 */
-	public Scoreboard(ActionListener controller, Match model) {
+	public Scoreboard(Match model) {
 
 		// Store model in field
 		this.model = model;
@@ -57,7 +56,8 @@ public class Scoreboard extends JPanel {
 	/**
 	 * Updates scoreboard when new players are added.
 	 * 
-	 * @param Player
+	 * @param playerName String to be added to the scoreboard
+	 * for the new player.
 	 */
 	protected void addPlayer(String playerName) {
 		
@@ -83,8 +83,9 @@ public class Scoreboard extends JPanel {
 	 * Highlights the panel for the given player with the given
 	 * colour.
 	 * 
-	 * @param playerName
-	 * @param colour
+	 * @param playerName String for the name of the player to highlight.
+	 * @param colour Color object containing the colour with which to
+	 * highlight the given player.
 	 */
 	protected void highlightPanel(String playerName, Color colour) {
 		playerPanels.get(playerName).highlightPlayer(colour);

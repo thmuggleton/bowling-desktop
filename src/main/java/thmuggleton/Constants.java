@@ -31,6 +31,9 @@ public interface Constants {
 	 */
 	public static final String PATH_TO_TROPHY_IMAGE = "images/gold_trophy_graphic.png";
 	
+	/**
+	 * Contains HTML for what is displayed in the 'About' dialog. 
+	 */
 	public static final String ABOUT_DIALOG_MESSAGE =
 			  "<html>"
 			+ "	<head></head>"
