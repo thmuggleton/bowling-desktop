@@ -19,39 +19,20 @@ digraph G {
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left"> + MatchControllerTest() </td></tr>
-<tr><td align="left" balign="left"> + shouldCorrectlyAddValidPlayer() </td></tr>
-<tr><td align="left" balign="left"> + shouldCorrectlyAddScoreForValidScoreAndValidPlayer() </td></tr>
-<tr><td align="left" balign="left"> + shouldDisplayErrorDialogForInvalidAddPlayer(optionPane : JOptionPane) </td></tr>
-<tr><td align="left" balign="left"> + shouldDisplayErrorDialogForInvalidScore(optionPane : JOptionPane) </td></tr>
-<tr><td align="left" balign="left"> + shouldDisplayErrorDialogWhenScoreIsAddedToCompletedGame(optionPane : JOptionPane) </td></tr>
-<tr><td align="left" balign="left"> + shouldClearModelAndViewForNewMatch() </td></tr>
-<tr><td align="left" balign="left"> + shouldPromptUserBeforeClearingMatchInProgress(mockedOptionPane : JOptionPane) </td></tr>
-<tr><td align="left" balign="left"> + shouldNotClearMatchInProgressIfUserChoosesNoOption(mockedOptionPane : JOptionPane) </td></tr>
-		</table></td></tr>
-		</table>>, URL="./MatchControllerTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// thmuggleton.controller.MainControllerTest
-	c1 [label=<<table title="thmuggleton.controller.MainControllerTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MainControllerTest.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> MainControllerTest </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + exit : ExpectedSystemExit </td></tr>
-		</table></td></tr>
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + MainControllerTest() </td></tr>
-<tr><td align="left" balign="left"> + shouldDelegateCreationOfNewMatch(mockEvent : ActionEvent) </td></tr>
-<tr><td align="left" balign="left"> + shouldDelegateExportScoreboardImage(mockEvent : ActionEvent) </td></tr>
-<tr><td align="left" balign="left"> + shouldExitWithoutPromptIfMatchIsFinishedWhenExitIsCalled(mockEvent : ActionEvent) </td></tr>
-<tr><td align="left" balign="left"> + shouldPromptBeforeExitIfMatchIsInProgressWhenExitIsCalled(mockEvent : ActionEvent, mockedOptionPane : JOptionPane) </td></tr>
-<tr><td align="left" balign="left"> + shouldNotExitIfMatchIsInProgressAndUserCancelsActionWhenExitIsCalled(mockEvent : ActionEvent, mockedOptionPane : JOptionPane) </td></tr>
-<tr><td align="left" balign="left"> + shouldDelegateAdditionOfNewPlayer(mockEvent : ActionEvent) </td></tr>
-<tr><td align="left" balign="left"> + shouldDelegateAdditionOfNewScore(mockEvent : ActionEvent) </td></tr>
+<tr><td align="left" balign="left"> + shouldCorrectlyAddValidPlayer(mockEvent : ActionEvent) </td></tr>
+<tr><td align="left" balign="left"> + shouldCorrectlyAddScoreForValidScoreAndValidPlayer(mockEvent : ActionEvent) </td></tr>
+<tr><td align="left" balign="left"> + shouldDisplayErrorDialogForInvalidAddPlayer(mockEvent : ActionEvent, optionPane : JOptionPane) </td></tr>
+<tr><td align="left" balign="left"> + shouldDisplayErrorDialogForInvalidScore(mockEvent : ActionEvent, optionPane : JOptionPane) </td></tr>
+<tr><td align="left" balign="left"> + shouldDisplayErrorDialogWhenScoreIsAddedToCompletedGame(mockEvent : ActionEvent, optionPane : JOptionPane) </td></tr>
+<tr><td align="left" balign="left"> + shouldClearModelAndViewForNewMatch(mockEvent : ActionEvent) </td></tr>
+<tr><td align="left" balign="left"> + shouldPromptUserBeforeClearingMatchInProgress(mockEvent : ActionEvent, mockedOptionPane : JOptionPane) </td></tr>
+<tr><td align="left" balign="left"> + shouldNotClearMatchInProgressIfUserChoosesNoOption(mockEvent : ActionEvent, mockedOptionPane : JOptionPane) </td></tr>
 <tr><td align="left" balign="left"> + shouldRetrieveAndHighlightWinnersWhenModelStateChanges(mockEvent : ChangeEvent) </td></tr>
 <tr><td align="left" balign="left"> + shouldDisplayWinnerDialogWhenModelStateChangesAndMatchIsOver(mockEvent : ChangeEvent, mockedOptionPane : JOptionPane) </td></tr>
 		</table></td></tr>
-		</table>>, URL="./MainControllerTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./MatchControllerTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.controller.IOControllerTest
-	c2 [label=<<table title="thmuggleton.controller.IOControllerTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IOControllerTest.html">
+	c1 [label=<<table title="thmuggleton.controller.IOControllerTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IOControllerTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> IOControllerTest </td></tr>
 		</table></td></tr>
@@ -60,10 +41,25 @@ digraph G {
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left"> + IOControllerTest() </td></tr>
-<tr><td align="left" balign="left"> + shouldTakeNoFurtherActionIfUserPressesCancelWhenExportingAScoreboardImage(mockedFileChooser : JFileChooser) </td></tr>
-<tr><td align="left" balign="left"> + shouldCorrectlyExportScoreboardImageToPathWithNoExtensionSelectedByUser(mockedFileChooser : JFileChooser, mockedScoreboardImage : BufferedImage, mockedSelectedFile : File, mockedOuputFile : File, mockedImageWriter : ImageIO) </td></tr>
-<tr><td align="left" balign="left"> + shouldCorrectlyExportScoreboardImageToPathWithInvalidExtension(mockedFileChooser : JFileChooser, mockedScoreboardImage : BufferedImage, mockedSelectedFile : File, mockedOuputFile : File, mockedImageWriter : ImageIO) </td></tr>
+<tr><td align="left" balign="left"> + shouldTakeNoFurtherActionIfUserPressesCancelWhenExportingAScoreboardImage(mockEvent : ActionEvent, mockedFileChooser : JFileChooser) </td></tr>
+<tr><td align="left" balign="left"> + shouldCorrectlyExportScoreboardImageToPathWithNoExtensionSelectedByUser(mockEvent : ActionEvent, mockedFileChooser : JFileChooser, mockedScoreboardImage : BufferedImage, mockedSelectedFile : File, mockedOuputFile : File, mockedImageWriter : ImageIO) </td></tr>
+<tr><td align="left" balign="left"> + shouldCorrectlyExportScoreboardImageToPathWithInvalidExtension(mockEvent : ActionEvent, mockedFileChooser : JFileChooser, mockedScoreboardImage : BufferedImage, mockedSelectedFile : File, mockedOuputFile : File, mockedImageWriter : ImageIO) </td></tr>
 		</table></td></tr>
 		</table>>, URL="./IOControllerTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// thmuggleton.controller.SystemControllerTest
+	c2 [label=<<table title="thmuggleton.controller.SystemControllerTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SystemControllerTest.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> SystemControllerTest </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + exit : ExpectedSystemExit </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + SystemControllerTest() </td></tr>
+<tr><td align="left" balign="left"> + shouldExitWithoutPromptIfMatchIsFinishedWhenExitIsCalled(mockEvent : ActionEvent) </td></tr>
+<tr><td align="left" balign="left"> + shouldPromptBeforeExitIfMatchIsInProgressWhenExitIsCalled(mockEvent : ActionEvent, mockedOptionPane : JOptionPane) </td></tr>
+<tr><td align="left" balign="left"> + shouldNotExitIfMatchIsInProgressAndUserCancelsActionWhenExitIsCalled(mockEvent : ActionEvent, mockedOptionPane : JOptionPane) </td></tr>
+		</table></td></tr>
+		</table>>, URL="./SystemControllerTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

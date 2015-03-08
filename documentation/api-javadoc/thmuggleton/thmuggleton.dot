@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// thmuggleton.Constants
-	c26 [label=<<table title="thmuggleton.Constants" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Constants.html">
+	c30 [label=<<table title="thmuggleton.Constants" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Constants.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Constants </td></tr>
@@ -30,7 +30,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./Constants.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.Command
-	c27 [label=<<table title="thmuggleton.Command" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Command.html">
+	c31 [label=<<table title="thmuggleton.Command" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Command.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Command </td></tr>
@@ -48,7 +48,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./Command.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.App
-	c28 [label=<<table title="thmuggleton.App" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./App.html">
+	c32 [label=<<table title="thmuggleton.App" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./App.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> App </td></tr>
 		</table></td></tr>

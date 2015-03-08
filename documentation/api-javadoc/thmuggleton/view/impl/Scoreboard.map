@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Scoreboard.html" title="thmuggleton.view.impl.Scoreboard" alt="" coords="16,301,360,447"/>
-<area shape="rect" id="node1" href="./Scoreboard.html" title="&lt;TABLE&gt;" alt="" coords="5,296,371,452"/>
-<area shape="rect" id="node2_1" href="http://java.sun.com/j2se/1.4.2/docs/api/javax/swing/JPanel.html" title="javax.swing.JPanel" alt="" coords="40,11,336,243"/>
-<area shape="rect" id="node2" href="http://java.sun.com/j2se/1.4.2/docs/api/javax/swing/JPanel.html" title="&lt;TABLE&gt;" alt="" coords="29,5,347,248"/>
+<area shape="rect" id="node1_0" href="./Scoreboard.html" title="thmuggleton.view.impl.Scoreboard" alt="" coords="16,301,337,447"/>
+<area shape="rect" id="node1" href="./Scoreboard.html" title="&lt;TABLE&gt;" alt="" coords="5,296,348,452"/>
+<area shape="rect" id="node2_1" href="http://java.sun.com/j2se/1.4.2/docs/api/javax/swing/JPanel.html" title="javax.swing.JPanel" alt="" coords="29,11,325,243"/>
+<area shape="rect" id="node2" href="http://java.sun.com/j2se/1.4.2/docs/api/javax/swing/JPanel.html" title="&lt;TABLE&gt;" alt="" coords="18,5,335,248"/>
 </map>

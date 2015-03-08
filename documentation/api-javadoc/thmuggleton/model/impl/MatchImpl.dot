@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// thmuggleton.model.Match
-	c612 [label=<<table title="thmuggleton.model.Match" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../Match.html">
+	c689 [label=<<table title="thmuggleton.model.Match" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../Match.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Match </td></tr>
@@ -30,7 +30,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="../Match.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.model.impl.MatchImpl
-	c615 [label=<<table title="thmuggleton.model.impl.MatchImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MatchImpl.html">
+	c692 [label=<<table title="thmuggleton.model.impl.MatchImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MatchImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MatchImpl </td></tr>
 		</table></td></tr>
@@ -52,6 +52,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./MatchImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//thmuggleton.model.impl.MatchImpl implements thmuggleton.model.Match
-	c612:p -> c615:p [dir=back,arrowtail=empty,style=dashed];
+	c689:p -> c692:p [dir=back,arrowtail=empty,style=dashed];
 }
 

@@ -1,4 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./IOController.html" title="thmuggleton.controller.IOController" alt="" coords="16,11,193,104"/>
-<area shape="rect" id="node1" href="./IOController.html" title="&lt;TABLE&gt;" alt="" coords="5,5,204,109"/>
+<area shape="rect" id="node1_0" href="./IOController.html" title="thmuggleton.controller.IOController" alt="" coords="16,163,240,273"/>
+<area shape="rect" id="node1" href="./IOController.html" title="&lt;TABLE&gt;" alt="" coords="5,157,251,279"/>
+<area shape="rect" id="node2_1" href="./Controller.html" title="thmuggleton.controller.Controller" alt="" coords="51,11,205,104"/>
+<area shape="rect" id="node2" href="./Controller.html" title="&lt;TABLE&gt;" alt="" coords="40,5,216,109"/>
 </map>

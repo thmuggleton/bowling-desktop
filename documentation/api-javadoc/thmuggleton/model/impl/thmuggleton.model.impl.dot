@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// thmuggleton.model.impl.MatchImpl
-	c156 [label=<<table title="thmuggleton.model.impl.MatchImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MatchImpl.html">
+	c170 [label=<<table title="thmuggleton.model.impl.MatchImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MatchImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MatchImpl </td></tr>
 		</table></td></tr>
@@ -32,7 +32,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./MatchImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.model.impl.GameImpl
-	c157 [label=<<table title="thmuggleton.model.impl.GameImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GameImpl.html">
+	c171 [label=<<table title="thmuggleton.model.impl.GameImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GameImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> GameImpl </td></tr>
 		</table></td></tr>
@@ -51,7 +51,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./GameImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.model.impl.LastFrameImpl
-	c158 [label=<<table title="thmuggleton.model.impl.LastFrameImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LastFrameImpl.html">
+	c172 [label=<<table title="thmuggleton.model.impl.LastFrameImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LastFrameImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LastFrameImpl </td></tr>
 		</table></td></tr>
@@ -67,7 +67,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./LastFrameImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.model.impl.FrameImpl
-	c159 [label=<<table title="thmuggleton.model.impl.FrameImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FrameImpl.html">
+	c173 [label=<<table title="thmuggleton.model.impl.FrameImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FrameImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> FrameImpl </td></tr>
 		</table></td></tr>
@@ -83,7 +83,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./FrameImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.model.impl.AbstractFrame
-	c160 [label=<<table title="thmuggleton.model.impl.AbstractFrame" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractFrame.html">
+	c174 [label=<<table title="thmuggleton.model.impl.AbstractFrame" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractFrame.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractFrame </font></td></tr>
 		</table></td></tr>
@@ -109,8 +109,8 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./AbstractFrame.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//thmuggleton.model.impl.LastFrameImpl extends thmuggleton.model.impl.AbstractFrame
-	c160:p -> c158:p [dir=back,arrowtail=empty];
+	c174:p -> c172:p [dir=back,arrowtail=empty];
 	//thmuggleton.model.impl.FrameImpl extends thmuggleton.model.impl.AbstractFrame
-	c160:p -> c159:p [dir=back,arrowtail=empty];
+	c174:p -> c173:p [dir=back,arrowtail=empty];
 }
 

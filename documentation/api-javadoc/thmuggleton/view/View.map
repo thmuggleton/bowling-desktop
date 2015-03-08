@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./View.html" title="thmuggleton.view.View" alt="" coords="63,11,323,312"/>
-<area shape="rect" id="node1" href="./View.html" title="&lt;TABLE&gt;" alt="" coords="52,5,333,317"/>
-<area shape="rect" id="node2_1" href="./impl/MainWindow.html" title="thmuggleton.view.impl.MainWindow" alt="" coords="16,371,369,603"/>
-<area shape="rect" id="node2" href="./impl/MainWindow.html" title="&lt;TABLE&gt;" alt="" coords="5,365,380,608"/>
+<area shape="rect" id="node1_0" href="./View.html" title="thmuggleton.view.View" alt="" coords="70,11,330,312"/>
+<area shape="rect" id="node1" href="./View.html" title="&lt;TABLE&gt;" alt="" coords="59,5,341,317"/>
+<area shape="rect" id="node2_1" href="./impl/MainWindow.html" title="thmuggleton.view.impl.MainWindow" alt="" coords="16,371,384,603"/>
+<area shape="rect" id="node2" href="./impl/MainWindow.html" title="&lt;TABLE&gt;" alt="" coords="5,365,395,608"/>
 </map>

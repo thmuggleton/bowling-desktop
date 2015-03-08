@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// thmuggleton.controller.IOControllerTest
-	c55 [label=<<table title="thmuggleton.controller.IOControllerTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./IOControllerTest.html">
+	c54 [label=<<table title="thmuggleton.controller.IOControllerTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./IOControllerTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> IOControllerTest </td></tr>
 		</table></td></tr>
@@ -19,9 +19,9 @@ digraph G {
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left"> + IOControllerTest() </td></tr>
-<tr><td align="left" balign="left"> + shouldTakeNoFurtherActionIfUserPressesCancelWhenExportingAScoreboardImage(mockedFileChooser : JFileChooser) </td></tr>
-<tr><td align="left" balign="left"> + shouldCorrectlyExportScoreboardImageToPathWithNoExtensionSelectedByUser(mockedFileChooser : JFileChooser, mockedScoreboardImage : BufferedImage, mockedSelectedFile : File, mockedOuputFile : File, mockedImageWriter : ImageIO) </td></tr>
-<tr><td align="left" balign="left"> + shouldCorrectlyExportScoreboardImageToPathWithInvalidExtension(mockedFileChooser : JFileChooser, mockedScoreboardImage : BufferedImage, mockedSelectedFile : File, mockedOuputFile : File, mockedImageWriter : ImageIO) </td></tr>
+<tr><td align="left" balign="left"> + shouldTakeNoFurtherActionIfUserPressesCancelWhenExportingAScoreboardImage(mockEvent : ActionEvent, mockedFileChooser : JFileChooser) </td></tr>
+<tr><td align="left" balign="left"> + shouldCorrectlyExportScoreboardImageToPathWithNoExtensionSelectedByUser(mockEvent : ActionEvent, mockedFileChooser : JFileChooser, mockedScoreboardImage : BufferedImage, mockedSelectedFile : File, mockedOuputFile : File, mockedImageWriter : ImageIO) </td></tr>
+<tr><td align="left" balign="left"> + shouldCorrectlyExportScoreboardImageToPathWithInvalidExtension(mockEvent : ActionEvent, mockedFileChooser : JFileChooser, mockedScoreboardImage : BufferedImage, mockedSelectedFile : File, mockedOuputFile : File, mockedImageWriter : ImageIO) </td></tr>
 		</table></td></tr>
 		</table>>, URL="./IOControllerTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }

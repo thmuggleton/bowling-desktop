@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// thmuggleton.model.exceptions.BowlingException
-	c131 [label=<<table title="thmuggleton.model.exceptions.BowlingException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BowlingException.html">
+	c143 [label=<<table title="thmuggleton.model.exceptions.BowlingException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BowlingException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BowlingException </td></tr>
 		</table></td></tr>
@@ -22,7 +22,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./BowlingException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.model.exceptions.ScoreException
-	c132 [label=<<table title="thmuggleton.model.exceptions.ScoreException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ScoreException.html">
+	c144 [label=<<table title="thmuggleton.model.exceptions.ScoreException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ScoreException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ScoreException </td></tr>
 		</table></td></tr>
@@ -34,6 +34,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./ScoreException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//thmuggleton.model.exceptions.ScoreException extends thmuggleton.model.exceptions.BowlingException
-	c131:p -> c132:p [dir=back,arrowtail=empty];
+	c143:p -> c144:p [dir=back,arrowtail=empty];
 }
 

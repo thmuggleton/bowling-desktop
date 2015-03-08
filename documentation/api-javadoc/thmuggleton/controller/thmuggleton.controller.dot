@@ -9,8 +9,20 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
+	// thmuggleton.controller.InitialisationController
+	c0 [label=<<table title="thmuggleton.controller.InitialisationController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./InitialisationController.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> InitialisationController </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + InitialisationController() </td></tr>
+		</table></td></tr>
+		</table>>, URL="./InitialisationController.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.controller.IOController
-	c0 [label=<<table title="thmuggleton.controller.IOController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IOController.html">
+	c1 [label=<<table title="thmuggleton.controller.IOController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IOController.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> IOController </td></tr>
 		</table></td></tr>
@@ -18,26 +30,26 @@ digraph G {
 <tr><td align="left" balign="left">  </td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + IOController(view : View) </td></tr>
-<tr><td align="left" balign="left"> # exportScoreboardImage() </td></tr>
+<tr><td align="left" balign="left"> + IOController() </td></tr>
+<tr><td align="left" balign="left"> + setView(view : View) </td></tr>
+<tr><td align="left" balign="left"> + actionPerformed(e : ActionEvent) </td></tr>
 		</table></td></tr>
 		</table>>, URL="./IOController.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// thmuggleton.controller.MainController
-	c1 [label=<<table title="thmuggleton.controller.MainController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MainController.html">
+	// thmuggleton.controller.Controller
+	c2 [label=<<table title="thmuggleton.controller.Controller" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Controller.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> MainController </td></tr>
+<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
+<tr><td align="center" balign="center"> Controller </td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left">  </td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + MainController() </td></tr>
-<tr><td align="left" balign="left"> + actionPerformed(e : ActionEvent) </td></tr>
-<tr><td align="left" balign="left"> + stateChanged(e : ChangeEvent) </td></tr>
+<tr><td align="left" balign="left"><font face="Helvetica-Oblique" point-size="10.0"> + setView(view : View) </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="./MainController.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./Controller.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.controller.MatchController
-	c2 [label=<<table title="thmuggleton.controller.MatchController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MatchController.html">
+	c3 [label=<<table title="thmuggleton.controller.MatchController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MatchController.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MatchController </td></tr>
 		</table></td></tr>
@@ -45,11 +57,31 @@ digraph G {
 <tr><td align="left" balign="left">  </td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> # MatchController(model : Match, view : View) </td></tr>
-<tr><td align="left" balign="left"> # addPlayer() </td></tr>
-<tr><td align="left" balign="left"> # addScore() </td></tr>
-<tr><td align="left" balign="left"> + createNewMatch() </td></tr>
+<tr><td align="left" balign="left"> # MatchController(model : Match) </td></tr>
+<tr><td align="left" balign="left"> + setView(view : View) </td></tr>
+<tr><td align="left" balign="left"> + actionPerformed(e : ActionEvent) </td></tr>
+<tr><td align="left" balign="left"> + stateChanged(e : ChangeEvent) </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MatchController.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// thmuggleton.controller.SystemController
+	c4 [label=<<table title="thmuggleton.controller.SystemController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SystemController.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> SystemController </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + SystemController(model : Match) </td></tr>
+<tr><td align="left" balign="left"> + setView(view : View) </td></tr>
+<tr><td align="left" balign="left"> + actionPerformed(e : ActionEvent) </td></tr>
+		</table></td></tr>
+		</table>>, URL="./SystemController.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	//thmuggleton.controller.IOController implements thmuggleton.controller.Controller
+	c2:p -> c1:p [dir=back,arrowtail=empty,style=dashed];
+	//thmuggleton.controller.MatchController implements thmuggleton.controller.Controller
+	c2:p -> c3:p [dir=back,arrowtail=empty,style=dashed];
+	//thmuggleton.controller.SystemController implements thmuggleton.controller.Controller
+	c2:p -> c4:p [dir=back,arrowtail=empty,style=dashed];
 }
 

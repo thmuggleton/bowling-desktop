@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// thmuggleton.view.View
-	c723 [label=<<table title="thmuggleton.view.View" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./View.html">
+	c835 [label=<<table title="thmuggleton.view.View" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./View.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> View </td></tr>
@@ -35,7 +35,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./View.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// thmuggleton.view.impl.MainWindow
-	c726 [label=<<table title="thmuggleton.view.impl.MainWindow" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./impl/MainWindow.html">
+	c838 [label=<<table title="thmuggleton.view.impl.MainWindow" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./impl/MainWindow.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MainWindow </td></tr>
 		</table></td></tr>
@@ -43,7 +43,7 @@ digraph G {
 <tr><td align="left" balign="left">  </td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + MainWindow(controller : ActionListener, model : Match) </td></tr>
+<tr><td align="left" balign="left"> + MainWindow(controllers : Map&lt;String, ?&gt;, model : Match) </td></tr>
 <tr><td align="left" balign="left"> + clear() </td></tr>
 <tr><td align="left" balign="left"> + addPlayer(playerName : String) </td></tr>
 <tr><td align="left" balign="left"> + getNewPlayerName() : String </td></tr>
@@ -56,6 +56,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./impl/MainWindow.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//thmuggleton.view.impl.MainWindow implements thmuggleton.view.View
-	c723:p -> c726:p [dir=back,arrowtail=empty,style=dashed];
+	c835:p -> c838:p [dir=back,arrowtail=empty,style=dashed];
 }
 

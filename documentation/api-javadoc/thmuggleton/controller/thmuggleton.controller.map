@@ -1,8 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./IOController.html" title="thmuggleton.controller.IOController" alt="" coords="16,28,193,121"/>
-<area shape="rect" id="node1" href="./IOController.html" title="&lt;TABLE&gt;" alt="" coords="5,23,204,127"/>
-<area shape="rect" id="node2_1" href="./MainController.html" title="thmuggleton.controller.MainController" alt="" coords="239,19,463,130"/>
-<area shape="rect" id="node2" href="./MainController.html" title="&lt;TABLE&gt;" alt="" coords="229,14,474,135"/>
-<area shape="rect" id="node3_2" href="./MatchController.html" title="thmuggleton.controller.MatchController" alt="" coords="509,11,799,139"/>
-<area shape="rect" id="node3" href="./MatchController.html" title="&lt;TABLE&gt;" alt="" coords="499,5,809,144"/>
+<area shape="rect" id="node1_0" href="./InitialisationController.html" title="thmuggleton.controller.InitialisationController" alt="" coords="110,19,274,95"/>
+<area shape="rect" id="node1" href="./InitialisationController.html" title="&lt;TABLE&gt;" alt="" coords="99,14,285,101"/>
+<area shape="rect" id="node2_1" href="./IOController.html" title="thmuggleton.controller.IOController" alt="" coords="16,171,240,282"/>
+<area shape="rect" id="node2" href="./IOController.html" title="&lt;TABLE&gt;" alt="" coords="5,166,251,287"/>
+<area shape="rect" id="node3_2" href="./Controller.html" title="thmuggleton.controller.Controller" alt="" coords="320,11,475,104"/>
+<area shape="rect" id="node3" href="./Controller.html" title="&lt;TABLE&gt;" alt="" coords="309,5,485,109"/>
+<area shape="rect" id="node4_3" href="./MatchController.html" title="thmuggleton.controller.MatchController" alt="" coords="285,163,509,291"/>
+<area shape="rect" id="node4" href="./MatchController.html" title="&lt;TABLE&gt;" alt="" coords="275,157,520,296"/>
+<area shape="rect" id="node5_4" href="./SystemController.html" title="thmuggleton.controller.SystemController" alt="" coords="555,171,779,282"/>
+<area shape="rect" id="node5" href="./SystemController.html" title="&lt;TABLE&gt;" alt="" coords="544,166,789,287"/>
 </map>

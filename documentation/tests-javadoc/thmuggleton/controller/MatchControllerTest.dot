@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// thmuggleton.controller.MatchControllerTest
-	c67 [label=<<table title="thmuggleton.controller.MatchControllerTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MatchControllerTest.html">
+	c60 [label=<<table title="thmuggleton.controller.MatchControllerTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MatchControllerTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MatchControllerTest </td></tr>
 		</table></td></tr>
@@ -19,14 +19,16 @@ digraph G {
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left"> + MatchControllerTest() </td></tr>
-<tr><td align="left" balign="left"> + shouldCorrectlyAddValidPlayer() </td></tr>
-<tr><td align="left" balign="left"> + shouldCorrectlyAddScoreForValidScoreAndValidPlayer() </td></tr>
-<tr><td align="left" balign="left"> + shouldDisplayErrorDialogForInvalidAddPlayer(optionPane : JOptionPane) </td></tr>
-<tr><td align="left" balign="left"> + shouldDisplayErrorDialogForInvalidScore(optionPane : JOptionPane) </td></tr>
-<tr><td align="left" balign="left"> + shouldDisplayErrorDialogWhenScoreIsAddedToCompletedGame(optionPane : JOptionPane) </td></tr>
-<tr><td align="left" balign="left"> + shouldClearModelAndViewForNewMatch() </td></tr>
-<tr><td align="left" balign="left"> + shouldPromptUserBeforeClearingMatchInProgress(mockedOptionPane : JOptionPane) </td></tr>
-<tr><td align="left" balign="left"> + shouldNotClearMatchInProgressIfUserChoosesNoOption(mockedOptionPane : JOptionPane) </td></tr>
+<tr><td align="left" balign="left"> + shouldCorrectlyAddValidPlayer(mockEvent : ActionEvent) </td></tr>
+<tr><td align="left" balign="left"> + shouldCorrectlyAddScoreForValidScoreAndValidPlayer(mockEvent : ActionEvent) </td></tr>
+<tr><td align="left" balign="left"> + shouldDisplayErrorDialogForInvalidAddPlayer(mockEvent : ActionEvent, optionPane : JOptionPane) </td></tr>
+<tr><td align="left" balign="left"> + shouldDisplayErrorDialogForInvalidScore(mockEvent : ActionEvent, optionPane : JOptionPane) </td></tr>
+<tr><td align="left" balign="left"> + shouldDisplayErrorDialogWhenScoreIsAddedToCompletedGame(mockEvent : ActionEvent, optionPane : JOptionPane) </td></tr>
+<tr><td align="left" balign="left"> + shouldClearModelAndViewForNewMatch(mockEvent : ActionEvent) </td></tr>
+<tr><td align="left" balign="left"> + shouldPromptUserBeforeClearingMatchInProgress(mockEvent : ActionEvent, mockedOptionPane : JOptionPane) </td></tr>
+<tr><td align="left" balign="left"> + shouldNotClearMatchInProgressIfUserChoosesNoOption(mockEvent : ActionEvent, mockedOptionPane : JOptionPane) </td></tr>
+<tr><td align="left" balign="left"> + shouldRetrieveAndHighlightWinnersWhenModelStateChanges(mockEvent : ChangeEvent) </td></tr>
+<tr><td align="left" balign="left"> + shouldDisplayWinnerDialogWhenModelStateChangesAndMatchIsOver(mockEvent : ChangeEvent, mockedOptionPane : JOptionPane) </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MatchControllerTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }

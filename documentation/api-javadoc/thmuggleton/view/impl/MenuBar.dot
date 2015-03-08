@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// thmuggleton.view.impl.MenuBar
-	c627 [label=<<table title="thmuggleton.view.impl.MenuBar" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MenuBar.html">
+	c706 [label=<<table title="thmuggleton.view.impl.MenuBar" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MenuBar.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MenuBar </td></tr>
 		</table></td></tr>
@@ -18,13 +18,13 @@ digraph G {
 <tr><td align="left" balign="left">  </td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + MenuBar(controller : ActionListener) </td></tr>
+<tr><td align="left" balign="left"> + MenuBar(controllers : Map&lt;String, ?&gt;) </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MenuBar.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//thmuggleton.view.impl.MenuBar extends javax.swing.JMenuBar
-	c644:p -> c627:p [dir=back,arrowtail=empty];
+	c723:p -> c706:p [dir=back,arrowtail=empty];
 	// javax.swing.JMenuBar
-	c644 [label=<<table title="javax.swing.JMenuBar" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/javax/swing/JMenuBar.html">
+	c723 [label=<<table title="javax.swing.JMenuBar" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/javax/swing/JMenuBar.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> JMenuBar </td></tr>
 		</table></td></tr>
